@@ -111,14 +111,14 @@ def importa(entradaNome):
     nr = int(restr.cell(1,3).value)
                  
     # Vetor com os graus de liberdade restritos
-    R = np.zeros((nr,1))
+    R = np.zeros((nr,2))
     
     for c in range(nr):
         no = restr.cell(c+1,0).value
         xouy = restr.cell(c+1,1).value
         GDL = no*2-(2-xouy) 
-        R[c,0] = GDL-1
-
+        R[c,0] = no
+        R[c,1] = xouy
 
     return nn,N,nm,Inc,nc,F,nr,R
 
