@@ -304,9 +304,9 @@ A1 = np.array([
         [3, 2],
         [2, 5]
     ])
-b1 = np.array([[20, 39]])
+b1 = np.array([[20], [39]])
 
 print(gauss_seidel(A1, b1))
-[[2. 7.]]
+[[2], [7]]
 
 ```
