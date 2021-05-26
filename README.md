@@ -258,7 +258,7 @@ Importante observar o formato das entradas:
 ```
 A é uma matriz  (n, n)
 b é uma matriz  (n, 1)
-saída x é uma matrix (1, n)
+saída x é uma matrix (n, 1)
 ```
 
 Além disso, dois parâmetros adicionais `MAX_ITER` e `TOL` que representam o número
